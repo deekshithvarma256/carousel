@@ -17,7 +17,7 @@ const Modal = ({ modalOpen, onClose }) => {
       `}
     >
       <div
-        className="absolute inset-0 bg-gray-950 opacity-75"
+        className="absolute inset-0 bg-gray-950 opacity-60"
         onClick={handleClose}
       ></div>
       <div
