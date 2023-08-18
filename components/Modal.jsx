@@ -38,7 +38,7 @@ const Modal = ({ modalOpen, onClose }) => {
           <span>
             <span>{item.release_date}</span>
             <span className="m-4">{"|"}</span>
-            <span>{item.vote_average}</span>
+            <span>{item.vote_average}&nbsp;&#11088;</span>
           </span>
           <div className="my-2">
             {item.overview}
