@@ -12,10 +12,8 @@ const ImageComponent = ({ item }) => {
       loader={imageLoader}
       src={item.poster_path}
       alt={item.title}
-      className="w-full h-full"
+      className="w-full h-full object-contain"
       width={0}
-      layout="responsive"
-      objectFit="contain"
       height={0}
     />
   );
