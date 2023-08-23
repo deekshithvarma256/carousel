@@ -1,9 +1,9 @@
 
-const UglifyJsPlugin = require('uglifyjs-webpack-plugin');
+const TerserPlugin = require('terser-webpack-plugin');
 const nextConfig = {
   reactStrictMode: true,
   swcMinify: true,
-}
+};
 module.exports = {
   ...nextConfig,
   images: {
@@ -11,11 +11,11 @@ module.exports = {
   },
   webpack: (config, { isServer }) => {
     if (!isServer) {
+      config.optimization.minimize = true;
       config.optimization.minimizer = [
-        new UglifyJsPlugin({
+        new TerserPlugin({
           parallel: true,
-          sourceMap: false,
-          uglifyOptions: {
+          terserOptions: {
             compress: true,
             mangle: true,
           },

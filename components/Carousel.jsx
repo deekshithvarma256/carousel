@@ -88,8 +88,8 @@ const Carousel = ({ items }) => {
         <Image
           src={arrow}
           alt={"prev icon"}
-          width={30}
-          height={30}
+          width={25}
+          height={25}
           className="absolute top-1/2 transform rotate-180 -translate-y-1/2 animate-pulse"
         />
       </div>
@@ -100,8 +100,8 @@ const Carousel = ({ items }) => {
         <Image
           src={arrow}
           alt={"next icon"}
-          width={30}
-          height={30}
+          width={25}
+          height={25}
           className="absolute top-1/2 transform -translate-y-1/2 animate-pulse"
         />
       </div>
